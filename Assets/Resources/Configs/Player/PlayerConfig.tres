@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CharacterCharacteristicsResource" load_steps=2 format=3 uid="uid://bivcw6nh1ca02"]
+
+[ext_resource type="Script" uid="uid://vjusd5kc6eb" path="res://Assets/Resources/CharacterCharacteristicsResource.gd" id="1_kybo5"]
+
+[resource]
+script = ExtResource("1_kybo5")
+max_health = 100
+damage = 1
+defense = 1
+evasive_chance = 1
+attack_speed = 1
+metadata/_custom_type_script = "uid://vjusd5kc6eb"
