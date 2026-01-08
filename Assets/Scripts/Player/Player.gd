@@ -1,0 +1,2 @@
+extends CharacterTemplate
+class_name Player

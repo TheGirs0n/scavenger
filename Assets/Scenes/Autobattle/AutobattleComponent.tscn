@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvioo5nhde70x"]
+
+[ext_resource type="Script" uid="uid://dj0icnaixt56l" path="res://Assets/Scripts/Templates/AutobattleMain.gd" id="1_lrhbw"]
+
+[node name="AutobattleComponent" type="Node"]
+script = ExtResource("1_lrhbw")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

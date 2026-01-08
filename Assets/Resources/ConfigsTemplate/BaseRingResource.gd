@@ -1,0 +1,2 @@
+extends BaseItemResource
+class_name BaseRingResource
