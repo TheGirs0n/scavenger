@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxg61mbknb50i"]
+
+[ext_resource type="Script" uid="uid://balbpw1re2l3r" path="res://Assets/Scripts/MapObjects/EliteMonsterMapObject.gd" id="1_qlq5l"]
+
+[node name="EliteMonsterMapObject" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qlq5l")
+map_object_type = 1

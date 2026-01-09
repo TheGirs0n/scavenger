@@ -4,9 +4,9 @@
 
 [resource]
 script = ExtResource("1_kybo5")
-max_health = 100
-damage = 1
+max_health = 10
+damage = 2
 defense = 1
-evasive_chance = 1
+evasive_chance = 15
 attack_speed = 1
 metadata/_custom_type_script = "uid://vjusd5kc6eb"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BaseEquipmentResource" load_steps=2 format=3 uid="uid://b0rxm3gjh2a24"]
+
+[ext_resource type="Script" uid="uid://b5x378ys0p4y6" path="res://Assets/Resources/ConfigsTemplate/BaseEquipmentResource.gd" id="1_fl0w3"]
+
+[resource]
+script = ExtResource("1_fl0w3")
+item_name = ""
+item_description = ""
+item_type = 0
+metadata/_custom_type_script = "uid://b5x378ys0p4y6"

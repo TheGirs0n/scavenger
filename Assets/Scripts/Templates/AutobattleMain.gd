@@ -11,6 +11,12 @@ func set_system_owner(new_owner : CharacterTemplate):
 	
 func set_system_target(new_target : CharacterTemplate):
 	node_target = new_target
+	battle_timer.start()
 
 func _on_timer_timeout() -> void:
-	pass 
+	if node_target != null:
+		print(node_owner.name + " TRY ATTACK " + node_target.name)
+		node_target.try_take_damage(node_owner.character_config.damage)
+	else:
+		battle_timer.stop()
+		node_target = null

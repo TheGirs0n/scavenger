@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://dystdi7ccfw30"]
+
+[ext_resource type="Script" uid="uid://cpah8r8c3sagj" path="res://Assets/Scripts/Enemy/TestEnemy.gd" id="1_1pguf"]
+[ext_resource type="Resource" uid="uid://ddioe5ts1n6jr" path="res://Assets/Resources/Configs/Enemy/TestEnemyConfig.tres" id="2_ka56n"]
+[ext_resource type="PackedScene" uid="uid://bvioo5nhde70x" path="res://Assets/Scenes/Autobattle/AutobattleComponent.tscn" id="2_m5fva"]
+
+[node name="TestEnemy" type="Node2D"]
+script = ExtResource("1_1pguf")
+character_config = ExtResource("2_ka56n")
+
+[node name="AutobattleComponent" parent="." instance=ExtResource("2_m5fva")]

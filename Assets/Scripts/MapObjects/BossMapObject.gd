@@ -1,0 +1,2 @@
+extends MapObjectTemplate
+class_name BossMapObject

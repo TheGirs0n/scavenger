@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BaseRingResource" load_steps=2 format=3 uid="uid://bgc0frob20mnr"]
+
+[ext_resource type="Script" uid="uid://jawv0trmp2yw" path="res://Assets/Resources/ConfigsTemplate/BaseRingResource.gd" id="1_02igf"]
+
+[resource]
+script = ExtResource("1_02igf")
+ring_stats_buff = Dictionary[int, int]({})
+item_name = ""
+item_description = ""
+item_type = 0
+metadata/_custom_type_script = "uid://jawv0trmp2yw"

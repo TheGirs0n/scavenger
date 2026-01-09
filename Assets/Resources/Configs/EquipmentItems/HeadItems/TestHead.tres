@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BaseEquipmentResource" load_steps=2 format=3 uid="uid://baroxf5jda0ni"]
+
+[ext_resource type="Script" uid="uid://b5x378ys0p4y6" path="res://Assets/Resources/ConfigsTemplate/BaseEquipmentResource.gd" id="1_qkyjt"]
+
+[resource]
+script = ExtResource("1_qkyjt")
+equipment_stats_buff = Dictionary[int, int]({})
+item_name = ""
+item_description = ""
+item_type = 0
+metadata/_custom_type_script = "uid://b5x378ys0p4y6"

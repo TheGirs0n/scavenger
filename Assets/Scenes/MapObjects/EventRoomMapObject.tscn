@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dua6cw77pvfut"]
+
+[ext_resource type="Script" uid="uid://syc18vabvqwr" path="res://Assets/Scripts/MapObjects/EventRoomMapObject.gd" id="1_axygy"]
+
+[node name="EventRoomMapObject" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_axygy")
+map_object_type = 4

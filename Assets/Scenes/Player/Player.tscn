@@ -1,8 +1,49 @@
-[gd_scene load_steps=3 format=3 uid="uid://5y8aim11ixci"]
+[gd_scene load_steps=9 format=3 uid="uid://5y8aim11ixci"]
 
 [ext_resource type="Script" uid="uid://dpmwlkbmqrhhq" path="res://Assets/Scripts/Player/Player.gd" id="1_0ljjw"]
 [ext_resource type="Resource" uid="uid://bivcw6nh1ca02" path="res://Assets/Resources/Configs/Player/PlayerConfig.tres" id="2_na1c3"]
+[ext_resource type="PackedScene" uid="uid://bvioo5nhde70x" path="res://Assets/Scenes/Autobattle/AutobattleComponent.tscn" id="3_wp7c0"]
+[ext_resource type="Script" uid="uid://cbuqr0osulo5h" path="res://Assets/Scripts/Player/EquipmentComponent.gd" id="4_qy8wf"]
+[ext_resource type="Script" uid="uid://bde4f7ftii87x" path="res://Assets/Scripts/Templates/PlayerEquipmentTemplate.gd" id="5_2xki1"]
+[ext_resource type="Script" uid="uid://un3sqg2nkc50" path="res://Assets/Scripts/Player/PlayerRingComponent.gd" id="11_h1s43"]
+[ext_resource type="Script" uid="uid://bdpd1skslqt4j" path="res://Assets/Scripts/Templates/PlayerRingTemplate.gd" id="12_gfuib"]
+[ext_resource type="Script" uid="uid://bsvy63upguj2l" path="res://Assets/Scripts/Player/ArtifactInventory.gd" id="13_gfuib"]
 
 [node name="Player" type="Node2D"]
 script = ExtResource("1_0ljjw")
-player_config = ExtResource("2_na1c3")
+character_config = ExtResource("2_na1c3")
+
+[node name="AutobattleComponent" parent="." instance=ExtResource("3_wp7c0")]
+
+[node name="EquipmentComponent" type="Node" parent="."]
+script = ExtResource("4_qy8wf")
+
+[node name="HeadEquipment" type="Node" parent="EquipmentComponent"]
+script = ExtResource("5_2xki1")
+
+[node name="BodyEquipment" type="Node" parent="EquipmentComponent"]
+script = ExtResource("5_2xki1")
+
+[node name="LeftArmEquipment" type="Node" parent="EquipmentComponent"]
+script = ExtResource("5_2xki1")
+
+[node name="RightArmEquipment" type="Node" parent="EquipmentComponent"]
+script = ExtResource("5_2xki1")
+
+[node name="PantsEquipment" type="Node" parent="EquipmentComponent"]
+script = ExtResource("5_2xki1")
+
+[node name="RingComponent" type="Node" parent="."]
+script = ExtResource("11_h1s43")
+
+[node name="FirstRing" type="Node" parent="RingComponent"]
+script = ExtResource("12_gfuib")
+
+[node name="SecondRing" type="Node" parent="RingComponent"]
+script = ExtResource("12_gfuib")
+
+[node name="ThirdRing" type="Node" parent="RingComponent"]
+script = ExtResource("12_gfuib")
+
+[node name="ArtifactInventory" type="Node" parent="."]
+script = ExtResource("13_gfuib")
